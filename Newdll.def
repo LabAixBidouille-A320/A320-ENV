@@ -1,0 +1,9 @@
+LIBRARY	Skardll.dll
+EXPORTS
+  Start
+  Close
+  GetSwitchProc
+  LEDs
+  TestLEDs
+  GetLogProc
+  FastTimer
