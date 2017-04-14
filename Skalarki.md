@@ -19,14 +19,14 @@ Connectivité avec FMGS
 trouver la liste des composants reconnus, avec un indicateur lorsque
 ceux-ci sont connectés.
 
-![Skalarki IO](skalarki_IO.png)
+![Skalarki IO](skalarki_main.png)
 
 Pour configurer Skalarki, il est tout d'abord nécessaire de quitter le
 mode SDK, si celui-ci est actif. Ensuite, le bouton **Settings...**
 permet d'ouvrir la fenêtre de configuration de Skalarki. Cela permet de
 dégriser le panel
 
-![Skalarki Settings](skalarki_IO_options.png)
+![Skalarki Settings](skalarki.png)
 
 Ici, la sélection du module JeeHell FMGS coule de source. Cela dégrise
 le panel **SKALARKI Server Settings**. Celui-ci permet la configuration
