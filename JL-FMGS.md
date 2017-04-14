@@ -63,7 +63,6 @@ Dans l'assistant d'installation "Select Components" cocher :
 ### PC Serveur / PC Client
 Sur le pc serveur :
 - Démarrer la simulation Prepar3d.
-- Dans le dossier FMGS Server de A320FMGS lancer FMGS_Server.
 - Lancer l'éxecutable Starter du dossier principal (A320FMGS).
 
 Sur le pc client :
