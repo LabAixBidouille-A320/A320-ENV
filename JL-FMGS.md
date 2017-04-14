@@ -16,15 +16,16 @@ La documentation officielle est disponible en ligne :
 
 FMGS est installé sur 2 ordinateurs différents, l'un jouant le rôle du serveur et l'autre celui du client.
 Le serveur s'interface avec Prepar3d et le client responsable de l'affichage des données et instruments se connecte au serveur.
+On peut également tout installer sur un seul ordinateur en guise afin de tester la connectivité mais les performances seront amoindries.
 
 ### PC Serveur
 
 Ordinateur sur lequel Prepar3d est installé (donc le plus puissant).
-Récupérer l'éxecutable de la [dernière version de FMGS](http://aircockpit.com/viewtopic.php?f=173&t=5797) (à ce jour B47).
+Récupérer l'executable de la [dernière version de l'installer FMGS](http://aircockpit.com/viewtopic.php?f=173&t=5797) (à ce jour B47.1).
 
 Dans l'assistant d'installation "Select Components" ne cocher que :
 - Master FSX/P3D PC et FMGS Server and AP/FBW
-- FSUIPC Support et SKALARKI I/O
+- FSUIPC Support et SKALARKI I/O de "Hardware Modules"
 
 ![](FMGSserver.png)
 
@@ -34,30 +35,48 @@ A la fin de l'installation une fenêtre "Configure" apparaît. Renseigner les 2 
 
 ![](FMGSserver3.png)
 
-Une autre fenêtre s'ouvre, cliquer sur "Set Default".
+Une autre fenêtre s'ouvre, cliquer sur "Save Controls Configuration" puis la fermer.
 
 ### PC Client
 
 Sur un ordinaeur différent.
-Lancer l'éxécutable FMGS de la même manière que pour le serveur.
+Lancer l'exécutable de l'installer FMGS.
 
 Dans l'assistant d'installation "Select Components" cocher :
 - Toutes les options de "Main Application" mis à part Master FSX/P3D PC et FMGS Server and AP/FBW
-- Toutes les optins de "Hardware Modules"
+- SKALARKI I/O de "Hardware Modules"
 - Toutes les options de "Software panels interface"
 
 Dans la fenêtre "Configure" renseigner les 2 premiers champs avec l'addresse IP de l'ordinateur serveur. Laisser les autres champs par défaut.
 
+### Ordinateur unique (test FMGS)
+
+Lancer l'exécutable de l'installer FMGS.
+
+Dans l'assistant d'installation "Select Components" cocher :
+- Toutes les options de "Main Application"
+- FSUIPC Support et SKALARKI I/O de "Hardware Modules"
+- Toutes les options de "Software panels interface"
+
 ## Exécution
 
-### PC Serveur
+### PC Serveur / PC Client
+Sur le pc serveur :
+- Démarrer la simulation Prepar3d.
+- Dans le dossier FMGS Server de A320FMGS lancer FMGS_Server.
+- Lancer l'éxecutable Starter du dossier principal (A320FMGS).
+
+Sur le pc client :
+- Lancer l'éxecutable Starter du dossier principal (A320FMGS).
+- Il est possible de configurer les différents modules éxécutés par le Starter. Pour ce faire, éditer le fichier Starter.ini.
+- Le client est connecté au serveur et reçoit les données de Prepar3d.
+
+La fenêtre FMGS_Server doit maintenant détecter les différents modules du client et les indiquer comme "Connected".
+![](JeeHellWareServer.png)
+
+### Ordinateur unique
 
 Démarrer la simulation Prepar3d.
 Dans le dossier FMGS Server de A320FMGS lancer FMGS_Server.
 Lancer l'éxecutable Starter du dossier principal (A320FMGS).
-
-### PC Client
-
-Lancer l'éxecutable Starter du dossier principal (A320FMGS).
-Il est possible de configurer les différents modules éxécutés par le Starter. Pour ce faire, éditer le fichier Starter.ini.
-
+La fenêtre FMGS_Server doit maintenant détecter les différents modules du client et les indiquer comme "Connected".
